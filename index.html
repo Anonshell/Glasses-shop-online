@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <title>Smart & Cozy</title>
+</head>
+
+
+
+
+<body>
+    <header>
+        <nav class="bg-dark">
+            <div>
+                <a class="shop-logo" href="">Smart & Cozy</a>
+            </div>
+            <div>
+                <a href="">Home</a>
+                <a href="">Product</a>
+                <a href="">Review</a>
+                <a href="">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner header -->
+    <div class="banner-container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <div class=" d-flex justify-space-around bg-dark">
+                        <div class="">
+                            <img src="Resources/gl-1.jpg" width="300px"
+                                height="300px" class="m-5" alt="">
+                        </div>
+                        <div class="my-5">
+                            <h1 class="text-white">Ray-Ban</h1>
+                            <p class="w-75 text-white">
+                                Specially cut and shaped to fit perfectly with your Ray-Ban frames. 
+                            </p>
+                            <p class="text-white">price: $<span class="text-white">10</span></p>
+                            <div class="pe-3 border-0">
+                                <button class="btn btn-danger w-75 text-white" type="button" href="#products">Add To Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class=" d-flex justify-space-around bg-dark">
+                        <div class="">
+                            <img src="Resources/gl-10.jpg" width="300px"
+                                height="300px" class="m-5" alt="">
+                        </div>
+                        <div class="my-5">
+                            <h1 class="text-white">Vogue Eyewear
+                            </h1>
+                            <p class="w-75 text-white">
+                                Equipped with a coating that improves resistance to scratches and smudges.
+                            </p>
+                            <p class="text-white">price: $<span class="text-white">09</span></p>
+                            <div class="pe-3 border-0">
+                                <button class="btn btn-danger w-75" type="button" href="#products">Add To Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class=" d-flex justify-space-around bg-dark">
+                        <div class="">
+                            <img src="Resources/gl-11.png" width="300px"
+                                height="300px" class="m-5" alt="">
+                        </div>
+                        <div class="my-5">
+                            <h1 class="text-white">RB2132 NEW WAYFARER
+                            </h1>
+                            <p class="w-75 text-white">
+                                Specially cut and shaped to fit perfectly with your Ray-Ban frames.
+                            </p>
+                            <p class="text-white">price: $<span class="text-white">14</span></p>
+                            <div class="pe-3 border-0">
+                                <button class="btn btn-danger w-75" type="button" href="#products">Add To Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- products -->
+    <div class="product-container" id="product">
+        <div>
+            <div class="products p-3">
+                <div class="card prod-card  mt-4" id="prod1">
+                    <img src="Resources/gl-3.jpg" height="200px"
+                        width="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Oakley</h5>
+                        <p>$ <small id="prod1-price">20</small> </p>
+                        <div class="  prod-btn border-0">
+                            <button class="btn bg-dark text-white w-100" type="button" onclick="addToCart(1)">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card prod-card  mt-4" id="prod2">
+                    <img src="Resources/gl-4.jpg" height="200px"
+                        width="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Matte Brown Tortoise</h5>
+                        <p>$ <small id="prod2-price">30</small> </p>
+                        <div class="  prod-btn border-0">
+                            <button class="btn bg-dark text-white w-100" type="button" onclick="addToCart(2)">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card prod-card  mt-4" id="prod3">
+                    <img src="Resources/gl-5.webp"
+                        height="200px" width="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">OX8156 HOLBROOK RX</h5>
+                        <p>$ <small id="prod3-price">25</small> </p>
+                        <div class="  prod-btn border-0">
+                            <button class="btn bg-dark text-white w-100" type="button" onclick="addToCart(3)">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card prod-card  mt-4" id="prod4">
+                    <img src="Resources/gl-6.webp" height="200px"
+                        width="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Michael Kors</h5>
+                        <p>$ <small id="prod4-price">35</small> </p>
+                        <div class="  prod-btn border-0">
+                            <button class="btn bg-dark text-white w-100" type="button" onclick="addToCart(4)">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card prod-card  mt-4" id="prod5">
+                    <img src="Resources/gl-8.jpg" height="200px"
+                        width="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">RB3025 AVIATOR CLASSIC</h5>
+                        <p>$ <small id="prod5-price">40</small> </p>
+                        <div class="  prod-btn border-0">
+                            <button class="btn bg-dark text-white w-100" type="button" onclick="addToCart(5)">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card prod-card mt-4" id="prod6">
+                    <img src="Resources/gl12.jpg" height="200px"
+                        width="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">RB5154 CLUBMASTER</h5>
+                        <p>$ <small id="prod6-price">40</small> </p>
+                        <div class="  prod-btn border-0">
+                            <button class="btn bg-dark text-white w-100" type="button" onclick="addToCart(6)">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="product-price-total mt-5 p-3">
+            <div class="border border-dark p-3 m-3">
+                <h2>My Card</h2>
+                <hr>
+                <div class="row row-cols-2 mb-1">
+                    <P for="Total Product:">Total Product:
+                    <P>
+                    <p id="total-products"></p>
+                </div>
+
+                <div class="row row-cols-2 mb-1">
+                    <P for="Price:">Price:</P>
+                    <p id="price"></p>
+                </div>
+
+                <div class="row row-cols-2 mb-1">
+                    <P class="">Delivery:</P>
+                    <p id="delivery"></p>
+                </div>
+                <hr>
+                <div class="row row-cols-2 mb-1">
+                    <P class="" for="Shipping::">Shipping:</P>
+                    <p id="shipping"></p>
+                </div>
+
+                <div class="row row-cols-2 mb-1">
+                    <P class="" for="Total Price:">Total Price:</P>
+                    <p id="total-price"></p>
+                </div>
+                <div class="row row-cols-2 mb-1">
+                    <P class="" for="Tax:">VAT:</P>
+                    <p id="vat"></p>
+                </div>
+                <div class="row row-cols-2 mb-1">
+                    <P class="" for="Total Price with Tax:">Total Price with Tax:</P>
+                    <p id="tptax"></p>
+                </div>
+                <div class="  prod-btn border-0">
+                    <button class="btn bg-dark text-white w-100" type="button" onclick="checkout()">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- upcoming -->
+    <div class="Upcomingproducts">
+        <h1 style="text-align: center;"> <b>Upcoming Products</b></h1>
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <img src="Resources/glu-1.webp"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">VO5356</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, culpa.
+                    </p>
+                    <a href="#" class="btn btn-dark w-100">Pre-order</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="Resources/glu-2.webp"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">RB5154 CLUBMASTER</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, corrupti!</p>
+                    <a href="#" class="btn btn-dark w-100">Pre-order</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="Resources/glu-3.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">OX3218 SOCKET 5.5</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, magni.</p>
+                    <a href="#" class="btn btn-dark w-100">Pre-order</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- reviews -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="rev-item">
+                <div>
+                    <div>
+                        <img src="Resources/basyuni.jpg" height="300" width="300"
+                            class="rounded-circle">
+                    </div>
+                    <div>
+                        <h4 style="color: rgb(179, 179, 179);"> <b>sheik ahmed</b> </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="Resources/download (8).jpg" height="300" width="300"
+                            class="rounded-circle">
+                    </div>
+                    <div>
+                        <h4 style="color: rgb(179, 179, 179);"> <b>sheik ahmed yousuf</b> </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="Resources/mustafa.jpg" height="300" width="300"
+                            class="rounded-circle">
+                    </div>
+                    <div>
+                        <h4 style="color: rgb(179, 179, 179);"> <b>sheik mustafa</b> </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            <div class="rev-item">
+                <div>
+                    <div>
+                        <img src="Resources/IMG_1663681589439.png" height="300" width="300"
+                            class="rounded-circle">
+                    </div>
+                    <div>
+                        <h4 style="color: rgb(179, 179, 179);"> <b>Mohammad Ammar</b> </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="Resources/mn-1.jpg" height="300" width="300"
+                            class="rounded-circle">
+                    </div>
+                    <div>
+                        <h4 style="color: rgb(179, 179, 179);"> <b>ismeil</b> </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="Resources/ayman.jpg" height="300" width="300"
+                            class="rounded-circle">
+                    </div>
+                    <div>
+                        <h4 style="color: rgb(179, 179, 179);"> <b>Sheik ayman </b> </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="rev-item">
+                <div>
+                    <div>
+                        <img src="Resources/tantawi.jpg" height="300" width="300"
+                            class="rounded-circle">
+                    </div>
+                    <div>
+                        <h4 style="color: rgb(179, 179, 179);"> <b>sheik tantawi</b> </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="Resources/ayyub.jpg" height="300" width="300"
+                            class="rounded-circle">
+                    </div>
+                    <div>
+                        <h4 style="color: rgb(179, 179, 179);"> <b>sheik ayyub</b> </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="Resources/taruti.jpg" height="300" width="300"
+                            class="rounded-circle">
+                    </div>
+                    <div>
+                        <h4 style="color: rgb(179, 179, 179);"> <b>Sheik taruti</b> </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-body">
+            <h1>SERVICES</h1>
+            <div>
+                <h>Baby Zone</h>
+                <p>baby exclusive clothes</p>
+            </div>
+            <div>
+                <h>Men's Corner</h>
+                <p>Men's exclusive clothes</p>
+            </div>
+            <div>
+                <h>Women's world</h>
+                <p>Women's exclusive clothes</p>
+            </div>
+        </div>
+        <div class="footer-body">
+            <h1>ABOUT</h1>
+            <div>
+                <h>Baby Zone</h>
+                <p>baby exclusive clothes</p>
+            </div>
+            <div>
+                <h>Men's Corner</h>
+                <p>Men's exclusive clothes</p>
+            </div>
+            <div>
+                <h>Women's world</h>
+                <p>Women's exclusive clothes</p>
+            </div>
+        </div>
+        <div class="footer-body">
+            <h1>CONTACT</h1>
+            <div>
+                <h>Baby Zone</h>
+                <p>baby exclusive clothes</p>
+            </div>
+            <div>
+                <h>Men's Corner</h>
+                <p>Men's exclusive clothes</p>
+            </div>
+            <div>
+                <h>Women's world</h>
+                <p>Women's exclusive clothes</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+
+
+
+</html>
